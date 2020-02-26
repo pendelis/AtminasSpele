@@ -14,6 +14,7 @@ zzz
     <body>
         <div>Tjjjt</div>
         <button onclick="startGame()">Start game</button>
+        <form id="forma"></form>0
         <script>
             var elementi = 4;
             
@@ -22,6 +23,7 @@ zzz
                 for (i=1; i<elementi*elementi;i++){
                    let poga = document.createElement("INPUT"); poga.value="adsf"; poga.type="button";
                    divs.appendChild(poga);
+                   document.getElementById("forma").appendChild(divs);
                 }
                 
             }
