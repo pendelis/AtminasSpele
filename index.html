@@ -14,13 +14,14 @@ zzz
     <body>
         <div>Tjjjt</div>
         <button onclick="startGame()">Start game</button>
-        <form id="forma"></form>0
+        <form id="forma"></form>
         <script>
             var elementi = 4;
             
             function startGame(){
                 var i;
                 for (i=1; i<elementi*elementi;i++){
+                   divs.innerHTML=(i+1)+")";
                    let poga = document.createElement("INPUT"); poga.value="adsf"; poga.type="button";
                    divs.appendChild(poga);
                    document.getElementById("forma").appendChild(divs);
