@@ -19,18 +19,25 @@ zzz
             var elementi = 4;
             
             function startGame(){
-                var i;
-                for (i=1; i<elementi*elementi;i++){
+                var i,z;
+                for (i=1; i<=elementi;i++){
                    let j=document.getElementsByClassName("rinda").length;
                    let divs = document.createElement("DIV"); divs.setAttribute("class","rinda");
-                   let ievads1 = document.createElement("INPUT"); ievads1.style="text-align:center";
                    divs.innerHTML=(j+1)+")";
-                   //let poga = document.createElement("INPUT"); poga.value="adsf"; poga.type="button";
-                   //divs.appendChild(poga);
-                   divs.appendChild(ievads1);
                    
-                   document.getElementById("forma").appendChild(divs);
-                }
+                   for (z=1; z<=elementi;z++){
+                         let ievads1 = document.createElement("IMG"); ievads1.style="text-align:center";
+                         ievads1.src= "images/bird.jpg";
+                         //ievads1.onclick=()=>{
+                         //    ievads1.style="visibility: visible";
+                         //}
+                  
+                         divs.appendChild(ievads1);
+                         
+               
+                         document.getElementById("forma").appendChild(divs);
+                        }   
+                    }
                 
             }
             
